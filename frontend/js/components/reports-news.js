@@ -13,7 +13,7 @@ const OPTIONS = {
   mobileFirst: true,
   infinite: true,
   touchMove:true,
-  speed: 400,
+  speed: 300,
   slidesToScroll: numbersSlider.xs,
   slidesToShow: numbersSlider.xs,
   variableHeight: true,
