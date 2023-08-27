@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Example Landing Page</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <link rel='stylesheet' href='./assets/css/theme.css' />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- NAV -->
+      <h1 style="display: none;">Landing racafe</h1>
+      <nav class="navbar navbar-expand-lg fixed-top main-menu js-menu no-gutters">
+        <div class="main-menu__wrapper d-flex w-100">
+          <div class="main-menu__header">
+            <a class="navbar-brand main-menu__logo" href="#">logo</a>
+          </div>
+          <div class="main-menu__login">
+            <a href="https://racafe.com.co/">Ingresar</a>
+          </div>
+        </div>
+      </nav>
+    <!-- fin NAV -->
+
+    <!-- BANNER HERO -->
+      <section class="banner-hero">
+        <picture class="banner-hero__image">
+            <source srcset="./assets/img-dist/banner_hero_section.webp" media="(min-width: 992px)">
+            <img class="w-100" src="./assets/img-dist/banner_hero_section_mobile.webp" alt="Fondo de la planta de cafe">
+        </picture>
+      </section>
+    <!-- fin BANNER HERO -->
+
+    <!-- REPORTS NEWS -->
+      <section class="reports-news">
+        <div class="container">
+          <header class="reports-news__header">
+            <h2 class="reports-news__title">Reportes nuevos</h2>
+            <p class="reports-news__subtitle">Conoce nuestros nuevos reportes</p>
+          </header>
+          <!-- slider -->
+          <div class="reports-news__cards-content js-reports-news">
+            <div class="card card-reports-news">
+              <article class="card__wrapper card-reports-news__wrapper">
+                <figure class="card__image card-reports-news__image">
+                  <img src="./assets/img-dist/pyg-gestion.webp" alt="Imagen de bodega llenos de sacos de café de fondo" class="w-100">
+                </figure>
+                <div class="card__copntent card-reports-news__content">
+                  <p class="card__paragraph card-reports-news__paragraph">
+                    
+                    Informes de gestión de las trilladoras, incluye compras, entradas, producción, despachos rechazos y utilidades del mes vencido
+                  </p>
+                  <h3 class="card__title card-reports-news__title">
+                    Información Financiera, Trilladoras
+                  </h3>
+                </div>
+              </article>
+            </div>
+            <div class="card card-reports-news">
+              <article class="card__wrapper card-reports-news__wrapper">
+                <figure class="card__image card-reports-news__image">
+                  <img src="./assets/img-dist/posicion-dolares-cafe.webp" alt="Fondo de billetes" class="w-100">
+                </figure>
+                <div class="card__copntent card-reports-news__content">
+                  <p class="card__paragraph card-reports-news__paragraph">
+                    Informe que presenta información de los saldos de café y dólares de acuerdo con los movimientos del día anterior, Saldo del Corto, Saldo de Comisionistas, Saldo diferencial + KKMM y Cuenta de compensación.
+                  </p>
+                  <h3 class="card__title card-reports-news__title">
+                    Control Interno, Trilladoras, Mesa de Negocios
+                  </h3>
+                </div>
+              </article>
+            </div>
+            <div class="card card-reports-news">
+              <article class="card__wrapper card-reports-news__wrapper">
+                <figure class="card__image card-reports-news__image">
+                  <img src="./assets/img-dist/junta-de-operaciones.webp" alt="Fondo de manos tomando una manojo de granos de café" class="w-100">
+                </figure>
+                <div class="card__copntent card-reports-news__content">
+                  <p class="card__paragraph card-reports-news__paragraph">
+                    Informe de resultados de operaciones.
+                  </p>
+                  <h3 class="card__title card-reports-news__title">
+                    Operaciones
+                  </h3>
+                </div>
+              </article>
+            </div>
+            <div class="card card-reports-news">
+              <article class="card__wrapper card-reports-news__wrapper">
+                <figure class="card__image card-reports-news__image">
+                  <img src="./assets/img-dist/ofertas-pendientes.webp" alt="Fondo persona introduciendo sus manos en granos de café" class="w-100">
+                </figure>
+                <div class="card__copntent card-reports-news__content">
+                  <p class="card__paragraph card-reports-news__paragraph">
+                    Informe de seguimiento diario de ofertas pendientes. Esta aplicación permite analizar el cumplimiento de ofertas pendientes. Realiza el cálculo de la antigüedad de la oferta desde la oferta origen. Permite seleccionar dos fechas de análisis y evaluar las entradas de las ofertas por antigüedad.
+                  </p>
+                  <h3 class="card__title card-reports-news__title">
+                    Control Interno, Trilladoras, Mesa de Negocios
+                  </h3>
+                </div>
+              </article>
+            </div>
+            <div class="card card-reports-news">
+              <article class="card__wrapper card-reports-news__wrapper">
+                <figure class="card__image card-reports-news__image">
+                  <img src="./assets/img-dist/informacion-pyg.webp" alt="Fondo granos de café secando" class="w-100">
+                </figure>
+                <div class="card__copntent card-reports-news__content">
+                  <p class="card__paragraph card-reports-news__paragraph">
+                    Formulario de ingreso de información auxiliar en el informe de gestión de trilladoras
+                  </p>
+                  <h3 class="card__title card-reports-news__title">
+                    Control Interno, Información Financiera, Talento Humano, Calidades
+                  </h3>
+                </div>
+              </article>
+            </div>
+            <div class="card card-reports-news">
+              <article class="card__wrapper card-reports-news__wrapper">
+                <figure class="card__image card-reports-news__image">
+                  <img src="./assets/img-dist/contexto-de-mercados.webp" alt="Imagen persona en la oficina frente de un computador portátil con una taza de café en la mano" class="w-100">
+                </figure>
+                <div class="card__copntent card-reports-news__content">
+                  <p class="card__paragraph card-reports-news__paragraph">
+                    Comportamiento de métricas comerciales e indicadores claves del negocio
+                  </p>
+                  <h3 class="card__title card-reports-news__title">
+                    Información Financiera, Mesa de Negocios, Control Interno
+                  </h3>
+                </div>
+              </article>
+            </div>
+            <div class="card card-reports-news">
+              <article class="card__wrapper card-reports-news__wrapper">
+                <figure class="card__image card-reports-news__image">
+                  <img src="./assets/img-dist/comite-de-riesgos.webp" alt="Imagen mano sosteniendo una taza de café" class="w-100">
+                </figure>
+                <div class="card__copntent card-reports-news__content">
+                  <p class="card__paragraph card-reports-news__paragraph">
+                    Comportamiento de métricas asociadas con la operación teniendo en cuenta límites
+                  </p>
+                  <h3 class="card__title card-reports-news__title">
+                    Información Financiera, Mesa de Negocios, Control Interno
+                  </h3>
+                </div>
+              </article>
+            </div>
+            <div class="card card-reports-news">
+              <article class="card__wrapper card-reports-news__wrapper">
+                <figure class="card__image card-reports-news__image">
+                  <img src="./assets/img-dist/lector-de-anuncios.webp" alt="Imagen manos sosteniendo unos pocos granos de café secos" class="w-100">
+                </figure>
+                <div class="card__copntent card-reports-news__content">
+                  <p class="card__paragraph card-reports-news__paragraph">
+                    Aplicación que permite leer los anuncios de la FNC y exportarlo a Excel asociando un NIT por Exportador
+                  </p>
+                  <h3 class="card__title card-reports-news__title">
+                    IControl Interno
+                  </h3>
+                </div>
+              </article>
+            </div>
+            <div class="card card-reports-news">
+              <article class="card__wrapper card-reports-news__wrapper">
+                <figure class="card__image card-reports-news__image">
+                  <img src="./assets/img-dist/informe-de-derivados.webp" alt="Imagen de documentos Financieros" class="w-100">
+                </figure>
+                <div class="card__copntent card-reports-news__content">
+                  <p class="card__paragraph card-reports-news__paragraph">
+                    Informe con las operaciones de derivados del día hábil inmediatamente anterior, Permite enviar el correo directamente al banco de la republica y hacer seguimiento a dichos envíos
+                  </p>
+                  <h3 class="card__title card-reports-news__title">
+                    Control Interno
+                  </h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- fin slider -->
+        </div>
+      </section>
+    <!-- fin REPORTS NEWS -->
+    <!-- REPORTS next -->
+      <section class="reports-next">
+        <div class="container">
+          <header class="reports-next__header">
+            <h2 class="reports-next__title">Próximos Reportes</h2>
+            <p class="reports-next__subtitle">Conoce los próximos reportes disponibles</p>
+          </header>
+          <div class="reports-next__cards-content row">
+            <!-- card-reports-next 1-->
+            <div class="card card-reports-next col-md-6">
+              <article class="card-reports-next__wrapper d-flex">
+                  <span class="card__icon card-reports-next__icon"></span>
+                  <div class="card-reports-next__content">
+                    <h2 class="card-reports-next__title">
+                      Sistema de Provisiones
+                    </h2>
+                    <p class="card__subtitle card-reports-next__subtitle">
+                      Control Interno, Trilladoras, Mesa de Negocios
+                    </p>
+                  </div>
+              </article>
+            </div>
+            <!-- fin card-reports-next 1 -->
+            <!-- card-reports-next 2-->
+            <div class="card card-reports-next col-md-6">
+              <article class="card-reports-next__wrapper d-flex">
+                  <span class="card__icon card-reports-next__icon"></span>
+                  <div class="card-reports-next__content">
+                    <h2 class="card-reports-next__title">
+                      CRM Clientes Inicial
+                    </h2>
+                    <p class="card__subtitle card-reports-next__subtitle">
+                      Trilladoras
+                    </p>
+                  </div>
+              </article>
+            </div>
+            <!-- fin card-reports-next 2 -->
+            <!-- card-reports-next 3-->
+            <div class="card card-reports-next col-md-6">
+              <article class="card-reports-next__wrapper d-flex">
+                  <span class="card__icon card-reports-next__icon"></span>
+                  <div class="card-reports-next__content">
+                    <h2 class="card-reports-next__title">
+                      Informe Nacional
+                    </h2>
+                    <p class="card__subtitle card-reports-next__subtitle">
+                      Industria Nacional, Información Financiera, Control Interno
+                    </p>
+                  </div>
+              </article>
+            </div>
+            <!-- fin card-reports-next 3 -->
+            <!-- card-reports-next 4-->
+            <div class="card card-reports-next col-md-6">
+              <article class="card-reports-next__wrapper d-flex">
+                  <span class="card__icon card-reports-next__icon"></span>
+                  <div class="card-reports-next__content">
+                    <h2 class="card-reports-next__title">
+                      Exportaciones e Importaciones
+                    </h2>
+                    <p class="card__subtitle card-reports-next__subtitle">
+                      Control Interno, Mesa de Negocios
+                    </p>
+                  </div>
+              </article>
+            </div>
+            <!-- fin card-reports-next 4 -->
+            <!-- card-reports-next 5-->
+            <div class="card card-reports-next col-md-6">
+              <article class="card-reports-next__wrapper d-flex">
+                  <span class="card__icon card-reports-next__icon"></span>
+                  <div class="card-reports-next__content">
+                    <h2 class="card-reports-next__title">
+                      Posición de Coproductos
+                    </h2>
+                    <p class="card__subtitle card-reports-next__subtitle">
+                      Industria Nacional, Información Financiera, Control Interno
+                    </p>
+                  </div>
+              </article>
+            </div>
+            <!-- fin card-reports-next 5 -->
+            <!-- card-reports-next 6-->
+            <div class="card card-reports-next col-md-6">
+              <article class="card-reports-next__wrapper d-flex">
+                  <span class="card__icon card-reports-next__icon"></span>
+                  <div class="card-reports-next__content">
+                    <h2 class="card-reports-next__title">
+                      Análisis cortes de trilla
+                    </h2>
+                    <p class="card__subtitle card-reports-next__subtitle">
+                      Auditoria, Control Interno
+                    </p>
+                  </div>
+              </article>
+            </div>
+            <!-- fin card-reports-next 6 -->
+            <!-- card-reports-next 7-->
+            <div class="card card-reports-next col-md-6">
+              <article class="card-reports-next__wrapper d-flex">
+                  <span class="card__icon card-reports-next__icon"></span>
+                  <div class="card-reports-next__content">
+                    <h2 class="card-reports-next__title">
+                      CRM Cliente Final
+                    </h2>
+                    <p class="card__subtitle card-reports-next__subtitle">
+                      Mesa de Negocios
+                    </p>
+                  </div>
+              </article>
+            </div>
+            <!-- fin card-reports-next 7 -->
+          </div>
+        </div>
+      </section>
+    <!-- fin REPORTS next -->
+
+    <!-- NEWS -->
+      <section class="news">
+        <div class="container">
+          <header class="news__header">
+            <h2 class="news__title">Noticias</h2>
+          </header>
+          <div class="news-cards-content row g-0">
+            <!-- card-news 1 -->
+            <div class="card card-news col-sm-6 col-md-4">
+              <article class="card-news__wrapper">
+                <figure class="card-news__image">
+                  <img src="./assets/img-dist/noticia-1.webp" alt="Imagen un hombre trabajando en una fabrica con granos de café" class="w-100">
+                </figure>
+                <div class="card-news__content">
+                  <h3 class="card-news__title">
+                    Title 1
+                  </h3>
+                  <p class="card-news__paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna lorem, ornare ultricies ex vel, vestibulum molestie ex. In malesuada est et augue iaculis, vitae porttitor sapien condimentum.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <!-- fin card-news 1 -->
+            <!-- card-news 2 -->
+            <div class="card card-news col-sm-6 col-md-4">
+              <article class="card-news__wrapper">
+                <figure class="card-news__image">
+                  <img src="./assets/img-dist/noticia-1.webp" alt="Imagen un hombre trabajando en una fabrica con granos de café" class="w-100">
+                </figure>
+                <div class="card-news__content">
+                  <h3 class="card-news__title">
+                    Title 2
+                  </h3>
+                  <p class="card-news__paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna lorem, ornare ultricies ex vel, vestibulum molestie ex. In malesuada est et augue iaculis, vitae porttitor sapien condimentum.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <!-- fin card-news 2 -->
+            <!-- card-news 3 -->
+            <div class="card card-news col-sm-6 col-md-4">
+              <article class="card-news__wrapper">
+                <figure class="card-news__image">
+                  <img src="./assets/img-dist/noticia-1.webp" alt="Imagen un hombre trabajando en una fabrica con granos de café" class="w-100">
+                </figure>
+                <div class="card-news__content">
+                  <h3 class="card-news__title">
+                    Title 3
+                  </h3>
+                  <p class="card-news__paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna lorem, ornare ultricies ex vel, vestibulum molestie ex. In malesuada est et augue iaculis, vitae porttitor sapien condimentum.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <!-- fin card-news 3 -->
+          </div>
+        </div>
+      </section>
+    <!-- fin NEWS -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-0">
+          <div class="footer__top">
+            <span class="footer__logo"></span>
+          </div>
+          <div class="footer__medium row g-0">
+            <div class="footer__terms col-md-6">
+              <a href="#">Términos y condiciones</a>
+            </div>
+            <div class="footer__data-policy col-md-6">
+              <a href="#">Política de tratamiento de Datos</a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p>© Racafé 2023 | Todos los derechos reservados</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- fin FOOTER -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" id="bootstrap-js-js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?ver=1.8.1" id="slick-js-js"></script>
+
+    <script type="text/javascript" src="./assets/js/theme.js" id="build-js-js"></script>
+  </body>
+</html>

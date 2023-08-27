@@ -1,0 +1,32 @@
+@function str-split($string, $separator) {
+  $result: ();
+  $index: str-index($string, $separator);
+
+  @while $index {
+    $result: append($result, str-slice($string, 1, $index - 1));
+    $string: str-slice($string, $index + str-length($separator));
+    $index: str-index($string, $separator);
+  }
+
+  @return append($result, $string);
+}
+
+
+@function slice($list, $start, $end: null) {
+  $result: ();
+  $length: length($list);
+  @if $end == null {
+    $end: $length;
+  }
+  @if $start < 0 {
+    $start: $length + $start + 1;
+  }
+  @if $end < 0 {
+    $end: $length + $end + 1;
+  }
+  @for $i from $start through $end {
+    $result: append($result, nth($list, $i));
+  }
+  @return $result;
+}
+

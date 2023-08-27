@@ -1,0 +1,9 @@
+.reports-news {
+    border: 3px solid red; //prueba
+
+    &__cards-content {
+        border: 3px solid deepskyblue; //prueba
+
+        @extend %t-content; //prueba
+    }
+}

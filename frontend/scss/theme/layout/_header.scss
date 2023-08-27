@@ -1,0 +1,67 @@
+.main-menu {
+  $self: &;
+  padding: space(.5) space(.25)!important;
+  position: fixed;
+  transition: all 0.7s ease-in;
+
+  &__wrapper {
+    height: auto;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__header{
+    min-height: rem(30px);
+
+    @include from(m){
+      min-height: rem(50px);
+    }
+  }
+
+  &__logo {
+    @include imageBg('../img/icons/logo.svg',
+    rem(30px), rem(117.62px));
+    margin: 0 !important;
+    transition: all 0.5s ease-in;
+
+    @include from(m){
+        @include imageBg('../img/icons/logo.svg',
+        rem(50px), rem(196px));
+    }
+  }
+
+  &__login {
+    position: absolute;
+    right: space(.5);
+    top: space(.25);
+    transition: all 0.5s ease-in;
+
+    &, & > * {
+      @extend %prox-report;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  &--down {
+    @include from(l){
+      padding: space(.25)!important;
+    }
+
+    #{$self}__logo {
+      @include from(l){
+        height: rem(50px);
+        width: rem(115px);
+      }
+    }
+
+    #{$self}__login {
+      @include from(l){
+        align-items: center;
+        display: flex;
+        height: 100%;
+        top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+// //Botones del principales
+// %button, .button {
+//   @extend %text-button;
+//   border-radius: rem(40px);
+//   display: inline-block;
+//   margin: space(.2);
+//   object-fit: cover;
+//   overflow: hidden;
+//   padding: rem(8px) rem(25px) rem(9px);
+//   text-align: center;
+//   text-decoration: none;
+//   transition: all 0.3s ease-in;
+// }
+
+// %button-transparent-white, .button-transparent-white {
+//   @extend %button;
+//   border: 2.5px solid $white;
+//   background-color: transparent;
+//   color: $white;
+
+//   &:hover {
+//     background-color: $blue-dk;
+//     &, a {
+//       color: $white;
+//     }
+//   }
+// }
+
+// %button-transparent-blue, .button-transparent-blue {
+//   @extend %button-transparent-white;
+//   background-color: transparent;
+//   color: $blue-dk;
+//   border: 2px solid $blue-dk;
+
+//   &:hover {
+//     background-color: $blue-dk;
+//     color: $white;
+//   }
+// }
+
+// %button-blue-dk, .button-blue-dk  {
+//   @extend %button-transparent-white;
+//   background-color: $blue-dk;
+//   color: $white-dk;
+//   border: 2px solid $blue-dk;
+
+//   &:hover {
+//     background-color: $purple;
+//     color: $white;
+//   }
+// }
+
+// %button-blue-2, .button-blue-2  {
+//   @extend %button-transparent-white;
+//   background-color: $blue-2;
+//   color: $white-dk;
+//   border: 2px solid $blue-2;
+
+//   &:hover {
+//     background-color: $purple;
+//     color: $white;
+//   }
+// }
+
