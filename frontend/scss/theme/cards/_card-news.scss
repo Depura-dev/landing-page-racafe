@@ -1,0 +1,20 @@
+.card-news {
+    padding: 0 space(1) !important;
+
+    &__image {
+        @include fluid-aspect(16 11, 'img');
+    }
+
+
+    &__title {
+        @extend %h3;
+        margin: space(1.25) 0 space(1.25);
+        &::after {
+            content: "";
+            display: block;
+            border-bottom: 3px solid $red;
+            width: rem(150px);
+            margin-top: space(.5);
+        }
+    }
+}

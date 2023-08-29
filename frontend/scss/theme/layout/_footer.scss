@@ -1,88 +1,42 @@
-footer{
-  .region.region-footer{
-    // background-color: $blue-2;
-    display: flex;
-    padding: space(2) 0;
+.footer{
+  background-color: $black;
+  padding: space(2.5) 0 space(1);
 
-    @include from(l){
-      flex-direction: row;
-    }
+  &, * {
+    @extend %prox-report;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo {
+    @include imageBg('../img/icons/logo-footer.svg');
+    @include square(rem(100px));
+  }
+
+  &__medium {
+    padding: space(1) 0 space(2.5);
 
     & > * {
-      align-items: center;
       display: flex;
-      flex: 1 1 50%;
     }
-
-    #block-brandigfooter{
-      justify-content: center;
-      padding: 0 space(.25);
-
-      .field {
-        display: flex;
-        height: rem(70px);
-
-        @include from(s){
-          height: rem(110px);
-        }
-
-        & > .field__item {
-          img{
-            height: 100%;
-            width: auto;
-          }
-          &:first-child{
-            align-items: center;
-            display: flex;
-            &::after{
-              content: '';
-              align-self: stretch;
-              // border-right: 2.75px solid $blue-lt;
-              height: auto;
-              margin-right: rem(7px);
-              margin-left: rem(15px);
-            }
-          }
-        }
-      }
-    }
-
-    .menu--footer {
-      justify-content: center;
-      margin-top: space(1);
-
-      @include from(l){
-        justify-content: flex-start;
-        margin-top: 0;
-        padding-left: space(1);
-      }
-      .navbar-nav {
-        display: block;
-        text-align: center;
-        width: 100%;
-
-
-        @include from(l){
-          display: flex;
-          text-align: left;
-          width: initial;
-        }
-      }
-      .nav-item {
-        display: inline-block;
-      }
-      .nav-link {
-        // color: $white;
-        font-size: rem(15px);
-        text-decoration: underline;
-        font-weight: 500;
-        padding: rem(2.5px);
-
-        @include from(m){
-          font-size: rem(17px);
-        }
-      }
-    }
-
   }
+
+  &__terms {
+    justify-content: flex-end;
+    padding-right: space(1) !important;
+  }
+
+  &__data-policy {
+    padding-left: space(1) !important;
+  }
+
+  &__bottom {
+    text-align: center;
+  }
+
 }

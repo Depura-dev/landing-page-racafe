@@ -1,0 +1,14 @@
+.card-reports-news {
+    &, & > * {
+        text-align: center;
+    }
+
+    &__paragraph {
+        margin-top: space(.75);
+    }
+
+    &__title {
+        @extend %body;
+        font-weight: bold;
+    }
+}

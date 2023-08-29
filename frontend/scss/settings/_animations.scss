@@ -66,7 +66,7 @@
 
   100% {
     opacity: 0;
-    display: none;
+    visibility: hidden;
   }
 }
 
@@ -129,7 +129,6 @@
   animation: slideUp .3s ease-out forwards;
 }
 
-
 %slide-down,
 .slide-down {
   animation: slideDown .3s ease-out forwards;
@@ -145,10 +144,4 @@
 %transparent-off,
 .transparent-off {
   animation: transparentOff .3s ease-out forwards;
-}
-
-
-%fade-in-right,
-.fade-in-right {
-  animation: fadeInRight .3s ease-out forwards;
 }

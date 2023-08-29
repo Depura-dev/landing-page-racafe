@@ -1,0 +1,20 @@
+.card-reports-next {
+    $self: &;
+    overflow:initial;
+    padding: 0;
+
+    &__wrapper {
+        gap: space(.5);
+    }
+
+    &__icon {
+        @include imageBg('../img/icons/file.svg', rem(30px), rem(25px));
+        transform: translateY(-25%);
+    }
+
+    &__title {
+        @extend %body;
+        font-weight: bold;
+    }
+
+}

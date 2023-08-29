@@ -4,16 +4,15 @@ import { responsiveSliderNumL, BREAKPOINTS } from "../libraries/utils";
 const numbersSlider = responsiveSliderNumL (4);
 
 const SELECTORS = {
-  component: '.js-prueba'
+  component: '.js-reports-news'
 }
 
 const OPTIONS = {
   arrows: true,
   dots: false,
   mobileFirst: true,
-  infinite: true,
   touchMove:true,
-  speed: 300,
+  speed: 400,
   slidesToScroll: numbersSlider.xs,
   slidesToShow: numbersSlider.xs,
   variableHeight: true,

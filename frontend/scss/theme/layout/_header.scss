@@ -44,19 +44,25 @@
   }
 
   &--down {
-    @include from(l){
+    @include from(m){
       padding: space(.25)!important;
     }
 
     #{$self}__logo {
-      @include from(l){
-        height: rem(50px);
-        width: rem(115px);
+      @include from(m){
+        height: 30px;
+        width: rem(100px);
+      }
+    }
+
+    #{$self}__header {
+      @include from(m){
+        min-height: 30px;
       }
     }
 
     #{$self}__login {
-      @include from(l){
+      @include from(m){
         align-items: center;
         display: flex;
         height: 100%;

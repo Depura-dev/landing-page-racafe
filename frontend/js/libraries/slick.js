@@ -1,5 +1,10 @@
 import 'slick-carousel'
 window.$ = window.jQuery
+
+const CLASSES = {
+  animIn: 'fade-in',
+  animOut: 'fade-out',
+}
 class GnCarousel {
   constructor (element, slickOptions, parent) {
     this.SELECTORS = {

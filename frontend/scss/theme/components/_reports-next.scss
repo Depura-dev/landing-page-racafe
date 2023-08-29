@@ -1,0 +1,15 @@
+.reports-next {
+    $self: &;
+    background-color: $brown;
+
+    &__cards-content-left {
+        justify-content: flex-end;
+        padding-right: space(2)!important;
+    }
+
+    &__cards-content-right {
+        padding-left: space(2)!important;
+    }
+
+
+}

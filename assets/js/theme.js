@@ -143,16 +143,15 @@ __webpack_require__.r(__webpack_exports__);
 const numbersSlider = (0,_libraries_utils__WEBPACK_IMPORTED_MODULE_1__.responsiveSliderNumL)(4);
 
 const SELECTORS = {
-  component: '.js-prueba'
+  component: '.js-reports-news'
 };
 
 const OPTIONS = {
   arrows: true,
   dots: false,
   mobileFirst: true,
-  infinite: true,
   touchMove: true,
-  speed: 300,
+  speed: 400,
   slidesToScroll: numbersSlider.xs,
   slidesToShow: numbersSlider.xs,
   variableHeight: true,
@@ -205,6 +204,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_0__);
 
 window.$ = window.jQuery;
+
+const CLASSES = {
+  animIn: 'fade-in',
+  animOut: 'fade-out'
+};
 class GnCarousel {
   constructor(element, slickOptions, parent) {
     this.SELECTORS = {

@@ -63,10 +63,26 @@ body {
 
 header{
   text-align: center;
-  margin-bottom: space(1.75);
+  margin-bottom: space(1);
+
+  @include from(m){
+    margin-bottom: space(3);
+  }
 
   & > *:not(:first-child) {
-      margin-top: space(1.5)!important;
+      margin-top: space(.75)!important;
+
+      @include from(m){
+        margin-top: space(1.5)!important;
+      }
+  }
+}
+
+section {
+  padding:space(2) 0;
+
+  @include from(m){
+    padding:space(4) 0;
   }
 }
 

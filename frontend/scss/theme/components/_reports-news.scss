@@ -1,9 +1,15 @@
 .reports-news {
-    border: 3px solid red; //prueba
+    overflow: hidden;
+    position: relative;
 
-    &__cards-content {
-        border: 3px solid deepskyblue; //prueba
+    .container {
+        position: relative;
+    }
 
-        @extend %t-content; //prueba
+    &__decorated {
+        @include imageBg('../img/icons/sheet_right.svg', rem(510px), rem(750px));
+        position: absolute;
+        right: space(-5);
+        top: space(-5);
     }
 }

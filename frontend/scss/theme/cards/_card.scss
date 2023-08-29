@@ -1,65 +1,14 @@
-.card {
-  // --bs-border-color-translucent: none;
-  // $border-radius: rem(20px);
-  // overflow: hidden;
-  // padding: 0 space(.7);
+.card-home {
+  --bs-border-color-translucent: none;
+  background-color: transparent !important;
+  border-radius: 0!important;
+  overflow: hidden;
+  padding: 0 space(1);
 
-  // &__title {
-  //   background-color: $brown;
-  //   border-radius: $border-radius $border-radius 0 0;
-  //   padding: space(1.25) 0;
-  //   text-align: center;
-  //   margin: 0;
-  //   h3{
-  //     // color: $blue-dk;
-  //     font-size: rem(28px);
-  //     font-weight: 600;
-  //     margin: 0;
-
-  //     @include from(m){
-  //       font-size: rem(35px);
-  //     }
-  //   }
-  // }
-
-  // &__subtitle {
-  //   margin: 0;
-  // }
-
-  // &__image {
-  //   @include fluid-aspect(16 9, 'img');
-  //   display: none;
-  // }
-
-  // &__body {
-  //   align-items: center;
-  //   border-radius: 0 0 $border-radius $border-radius;
-  //   display: flex;
-  //   flex-direction: column;
-  //   padding: space(.5);
-
-  //   @include from(m){
-  //     padding: space(1.5) space(.5);
-  //   }
-  // }
-
-  // &__text {
-  //   align-items: center;
-  //   // color: $white;
-  //   display: flex;
-  //   font-size: rem(22px);
-  //   font-weight: 600;
-  //   line-height: 1.2;
-  //   text-align: center;
-
-  //   @include from(m){
-  //     font-size: rem(25px);
-  //   }
-  // }
-
-  // &__cta {
-  //   // @extend %button-transparent-white;
-  //   min-width: rem(200px);
-  // }
+  &__image {
+    img {
+      border-radius: 0 !important;
+    }
+  }
 
 }

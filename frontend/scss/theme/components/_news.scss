@@ -1,0 +1,12 @@
+.news {
+    .container {
+        position: relative;
+    }
+
+    &__decorated {
+        @include imageBg('../img/icons/sheet_left.svg', rem(510px), rem(750px));
+        position: absolute;
+        left: space(-5);
+        top: space(-1);
+    }
+}
